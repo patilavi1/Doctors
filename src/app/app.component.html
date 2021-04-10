@@ -1,0 +1,16 @@
+<div class="main-container">
+  <div class="sidebar">
+   id: number=0;
+   <span (click)="changeNav(0)">home</span>
+     <span (click)="changeNav(1)">about</span>
+  </div>
+  <div class="main-home">
+    <div *ngIf="id==0">
+       home {{id}}
+    </div>
+    <div *ngIf="id==1">
+      about
+    </div>
+   {{id}}
+  </div>
+</div>
